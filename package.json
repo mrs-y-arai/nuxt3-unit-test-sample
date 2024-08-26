@@ -1,0 +1,33 @@
+{
+  "name": "nuxt-app",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "build": "nuxt build",
+    "dev": "nuxt dev",
+    "generate": "nuxt generate",
+    "preview": "nuxt preview",
+    "postinstall": "nuxt prepare; npx msw init",
+    "test": "vitest",
+    "test:coverage": "vitest --coverage",
+    "scaffdog": "scaffdog generate"
+  },
+  "dependencies": {
+    "nuxt": "^3.13.0",
+    "vue": "latest"
+  },
+  "devDependencies": {
+    "@nuxt/test-utils": "^3.14.1",
+    "@vitest/coverage-v8": "^2.0.5",
+    "@vue/test-utils": "^2.4.6",
+    "happy-dom": "^14.12.3",
+    "msw": "^2.3.5",
+    "playwright-core": "^1.46.1",
+    "scaffdog": "^4.0.0",
+    "unplugin-auto-import": "^0.18.2",
+    "vitest": "^2.0.5"
+  },
+  "msw": {
+    "workerDirectory": "src/public"
+  }
+}
