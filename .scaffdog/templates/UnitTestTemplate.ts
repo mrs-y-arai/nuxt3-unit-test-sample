@@ -21,17 +21,17 @@ vi.mock("#app", () => ({
   }),
 }));
 
-// 全てのテストを実行する前(1つ目のテスト開始前)に、サーバーを起動する。
+// 全てのテストを実行する前(1つ目のテスト開始前)に、mockサーバーを起動する。
 beforeAll(() => {
   server.listen();
 });
 
-// 各テストが終わるたびに、サーバーのリクエストハンドラをリセットする。
+// 各テストが終わるたびに、mockサーバーのリクエストハンドラをリセットする。
 afterEach(() => {
   server.resetHandlers();
 });
 
-// 全てのテストが終わったら、サーバーを閉じる。
+// 全てのテストが終わったら、mockサーバーを閉じる。
 afterAll(() => {
   server.close();
 });
@@ -50,11 +50,11 @@ describe("apiをモックする場合", () => {
     // Arrange
     // APIののモック準備
     const {
-      public: { apiBaseUrl },
+      public: { apiBase },
     } = useRuntimeConfig();
     // apiのモック関数
-    const getNewsListMock = () => {};
-    server.use(http.get(`${apiBaseUrl}/news`, getNewsListMock));
+    const getApiMock = () => {};
+    server.use(http.get(`${apiBase}/dummy`, getApiMock));
 
     // Act
 
