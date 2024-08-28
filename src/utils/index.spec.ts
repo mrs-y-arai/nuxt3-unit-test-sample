@@ -11,7 +11,7 @@ import {
 import { server } from "~/api/mocks/server";
 
 // MEMO: .envの値が、useRuntimeConfigに反映される前に、テストが実行されてしまうので、
-// useRuntimeConfigのモックは引き続きする
+// useRuntimeConfigのモックをする。
 vi.mock("#app", () => ({
   useRuntimeConfig: vi.fn().mockReturnValue({
     public: {
