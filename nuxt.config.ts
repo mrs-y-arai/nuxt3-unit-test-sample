@@ -6,7 +6,8 @@ export default defineNuxtConfig({
   modules: ["@nuxt/test-utils/module"],
   runtimeConfig: {
     public: {
-      apiBase: "/api",
+      appEnv: "",
+      apiBase: "",
     },
   },
 });

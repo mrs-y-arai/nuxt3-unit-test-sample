@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<coverage generated="1724681196364" clover="3.2.0">
-  <project timestamp="1724681196364" name="All files">
+<coverage generated="1724912082913" clover="3.2.0">
+  <project timestamp="1724912082913" name="All files">
     <metrics statements="24" coveredstatements="22" conditionals="5" coveredconditionals="5" methods="5" coveredmethods="4" elements="34" coveredelements="31" complexity="0" loc="24" ncloc="24" packages="2" files="2" classes="2"/>
     <package name="composables">
       <metrics statements="14" coveredstatements="14" conditionals="4" coveredconditionals="4" methods="3" coveredmethods="3"/>
-      <file name="useLoading.ts" path="/Users/yukiarai/Documents/programming_practice/nuxt3-unit-test-sample/src/composables/useLoading.ts">
+      <file name="useLoading.ts" path="/Users/l_0021/Desktop/programming/nuxt3-unit-test-sample/src/composables/useLoading.ts">
         <metrics statements="14" coveredstatements="14" conditionals="4" coveredconditionals="4" methods="3" coveredmethods="3"/>
         <line num="1" count="1" type="cond" truecount="1" falsecount="0"/>
         <line num="2" count="3" type="cond" truecount="1" falsecount="0"/>
@@ -24,7 +24,7 @@
     </package>
     <package name="utils">
       <metrics statements="10" coveredstatements="8" conditionals="1" coveredconditionals="1" methods="2" coveredmethods="1"/>
-      <file name="index.ts" path="/Users/yukiarai/Documents/programming_practice/nuxt3-unit-test-sample/src/utils/index.ts">
+      <file name="index.ts" path="/Users/l_0021/Desktop/programming/nuxt3-unit-test-sample/src/utils/index.ts">
         <metrics statements="10" coveredstatements="8" conditionals="1" coveredconditionals="1" methods="2" coveredmethods="1"/>
         <line num="1" count="1" type="cond" truecount="1" falsecount="0"/>
         <line num="2" count="1" type="stmt"/>
