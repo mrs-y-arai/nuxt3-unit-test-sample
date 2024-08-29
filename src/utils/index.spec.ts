@@ -1,24 +1,6 @@
 import { http, HttpResponse } from "msw";
-import {
-  vi,
-  expect,
-  it,
-  describe,
-  beforeAll,
-  afterEach,
-  afterAll,
-} from "vitest";
+import { expect, it, describe, beforeAll, afterEach, afterAll } from "vitest";
 import { server } from "~/api/mocks/server";
-
-// MEMO: .envの値が、useRuntimeConfigに反映される前に、テストが実行されてしまうので、
-// useRuntimeConfigのモックをする。
-// vi.mock("#app", () => ({
-//   useRuntimeConfig: vi.fn().mockReturnValue({
-//     public: {
-//       apiBase: "http://localhost:3000",
-//     },
-//   }),
-// }));
 
 // 全てのテストを実行する前(1つ目のテスト開始前)に、サーバーを起動する。
 beforeAll(() => {
